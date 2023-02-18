@@ -58,7 +58,7 @@ const addToCart = (id, title, price, description, image) => {
             if (result) {
                 return {
                     statusCode: 404,
-                    message: 'product already added to cart'
+                    message: 'Product already added to cart'
                 }
             }
             else {
@@ -74,7 +74,7 @@ const addToCart = (id, title, price, description, image) => {
                 newProduct.save()
                 return {
                     statusCode: 200,
-                    message: 'product successfully added to your cart'
+                    message: 'Product added to cart'
                 }
             }
         })
